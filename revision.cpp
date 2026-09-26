@@ -6,7 +6,7 @@ class Book{
     string author;
     int pages;
     int price;
-}:
+};
 int main(){
     Book b1;
     b1.title="C++ Programming";
