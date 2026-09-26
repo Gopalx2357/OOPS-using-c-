@@ -13,8 +13,12 @@ class Book {
 void printBookDetails(Book b) {
     cout << "Title: " << b.title << " " << "Author: " << b.author << " " << "Pages: " << b.pages << " " << "Price: " << b.price << endl;
 }
-void Change(Book b){
+/*void Change(Book b){
     b.author ="GATE 2027"; // not changes  because of pass by value 
+    b.pages =21000;
+}*/
+void Change(Book &b){
+    b.author ="GATE 2027"; //  changes  because of pass by Reference
     b.pages =21000;
 }
 
